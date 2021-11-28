@@ -22,9 +22,9 @@ import lombok.NoArgsConstructor;
 public class City {
     
     @Id
-    @Column(name = "id")
+    @Column(name = "city_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private int cityId;
 
     @Column(name = "city_name")
     private String cityName;

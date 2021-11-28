@@ -39,7 +39,7 @@ public class JobAdvertisementManager implements JobAdvertisementService {
             jobAdvertisement.setNumberOfOpenPosition(jobAdvertisementDto.getNumberOfOpenPosition());
             jobAdvertisement.setApplicationDeadline(jobAdvertisementDto.getApplicationDeadline());
             
-            jobAdvertisement.setCity(this.cityDao.getCityById(jobAdvertisementDto.getCityId()));
+            jobAdvertisement.setCity(this.cityDao.getCityByCityId(jobAdvertisementDto.getCityId()));
             jobAdvertisement.setEmployer(this.employerDao.getEmployerById(jobAdvertisementDto.getEmployerId()));
             jobAdvertisementDao.save(jobAdvertisement);
             return new SuccessResult("İş ilanı eklendi.");

@@ -22,7 +22,7 @@ public class Language {
    
     @Id
     @GeneratedValue
-    @Column(name="langguage_id")
+    @Column(name="language_id")
     private int languageId;
 
     @Column(name="name")

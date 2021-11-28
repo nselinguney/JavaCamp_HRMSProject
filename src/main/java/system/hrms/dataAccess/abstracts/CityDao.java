@@ -6,5 +6,5 @@ import system.hrms.entities.concretes.City;
 
 @Repository
 public interface CityDao extends JpaRepository<City,Integer> {
-    City getCityById(int id);
+    City getCityByCityId(int id);
 }

@@ -31,10 +31,10 @@ public class Skill {
     @Column(name="framework")
     private String framework;
     
-    //burayı anlamadım - SOR!
+    //burayı anlamadım - SOR! //ikinci candidate "candidates" mi olmalı?
     @ManyToMany()
     @JoinColumn(name="candidate_id")
-    private List<Candidate> candidates;
+    private List<Candidate> candidate;
     
     @OneToOne()
     @JoinColumn(name="candidate_cv_id")

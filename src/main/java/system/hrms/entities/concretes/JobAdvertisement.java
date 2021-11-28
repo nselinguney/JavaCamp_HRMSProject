@@ -43,6 +43,9 @@ public class JobAdvertisement {
     @Column(name = "number_of_open_position")
     private int numberOfOpenPosition;
     
+    @Column(name = "release_date")
+    private LocalDate releaseDate;
+    
     @Column(name = "is_active")
     private boolean isActive;
     
@@ -53,4 +56,8 @@ public class JobAdvertisement {
     @ManyToOne()
     @JoinColumn(name = "city_id")
     private City city;
+    
+    @ManyToOne
+    @JoinColumn(name = "job_id")
+    private Job job;
 }
